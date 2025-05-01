@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-primaria: #262626;
+    --cor-secundaria: #202020;
+    --cor-terciaria: #ffffff;
+    --cor-quaternaria: #757575;
+    --cor-quinta: #d5d4d4;
+    --cor-sexta: #f0f0f0;
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('https://fonts.gstatic.com/s/inter/v3/UcC0xg.2.0.0.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Estilos gerais */
+body {
+    background-color: var(--cor-primaria);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos do Header*/
+.logo {
+    background-color: var(--cor-primaria);
+    height: 150px;
+    width: auto;
+}
+.furia-logo {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 170px; 
+}
+.titulo {
+    color: var(--cor-terciaria);
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Inter-Bold', Helvetica, sans-serif;
+    font-weight: 700;
+}
+.subtitulo {
+    color: var(--cor-quaternaria);
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Inter-Regular', Helvetica, sans-serif;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+/* Estilos do Menu de Navegação */
+.lista-navegacao {
+    background-color: var(--cor-terciaria);
+    height: 70px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 10px;
+}
+.estilo-externo {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    
+    
+}
+.estilo-interno a:hover{
+    background-color: var(--cor-sexta);
+    box-shadow: 1px 2px 12px #00000040;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100px;
+    text-align: center;
+    transition: 0.3s;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.now {
+    background-color: var(--cor-sexta);
+    box-shadow: 1px 2px 12px #00000040;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100px;
+    text-align: center;
+}
+/* Estilos do Feed de Posts */
+section {
+    background-color: var(--cor-primaria);
+}
+.feed {
+    background-color: var(--cor-secundaria);
+}
+.post {
+    padding: 15px 20px 15px 20px;
+    background-color: var(--cor-terciaria);
+    max-width: 1000px;
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+}
+.feed-post {
+    padding: 10px 0 20px;  
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.foto-perfil {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.info-perfil {
+    display: block;
+    flex-direction: column;
+
+}
+.nome {
+    font-weight: bold;
+    font-size: 1em;
+}
+.post-time {
+    font-size: 0.8em;
+    color: var(--cor-quaternaria);
+}
+.conteudo-post {
+    line-height: 1.5;
+}
+.foto-post{
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+.interacao-post {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--cor-quinta);
+    padding-top: 10px;
+    
+}
+.botao-curtir, .botao-comentar, .botao-compartilhar {
+    color: var(--cor-primaria-quinta);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.botao-curtir:hover {
+    color: red;
+}
+.botao-comentar:hover {
+    color: greenyellow;
+}
+.botao-compartilhar:hover {
+    color: blue;
+}

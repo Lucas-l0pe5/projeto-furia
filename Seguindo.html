@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fúria Fanatics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globalstyle.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <header>
+        <div class="lista-navegacao">
+          <div class="estilo-externo"><div class="estilo-interno"><a href="Página Inicial.html" rel="prev">Página inicial</a></div></div>
+          <div class="estilo-externo"><div class="now">Seguindo</div></div>
+          <div class="estilo-externo"><div class="estilo-interno"><a href="Pesquisar.html" rel="next">Pesquisar</a></div></div>
+          <div class="estilo-externo"><div class="estilo-interno"><a href="Comunidades.html" rel="next">Comunidades</a></div></div>
+          <div class="estilo-externo"><div class="estilo-interno"><a href="Perfil.html" rel="next">Perfil</a></div></div>
+</header>
+    <script>
+      fetch("Header Logo.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+</body>

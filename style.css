@@ -47,6 +47,19 @@ body {
     font-weight: 400;
     padding-bottom: 40px;
 }
+/* Estilos do Rodapé */
+.rodape {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quinta);
+    text-align: center;
+    position: fixed; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Posiciona na parte inferior */
+    left: 0; /* Garante que fique alinhado à esquerda */
+    height: 50px;
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 20px;
+    z-index: 10; /* Garante que o rodapé fique acima de outros elementos */
+}
 
 /* Estilos do Menu de Navegação */
 .lista-navegacao {
@@ -71,7 +84,7 @@ body {
     padding: 10px;
     max-width: 100px;
     text-align: center;
-    transition: 0.3s
+    transition: 0.2s ;
 }
 a {
     color: black;

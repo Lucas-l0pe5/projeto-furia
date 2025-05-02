@@ -2,3 +2,6 @@ html, body {
   margin: 0px;
   height: 100%
 }
+body {
+  padding-bottom: 520px;
+}

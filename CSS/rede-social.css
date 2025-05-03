@@ -1,0 +1,21 @@
+:root {
+    --cor-primaria: #262626;
+    --cor-secundaria: #202020;
+    --cor-terciaria: #ffffff;
+    --cor-quaternaria: #757575;
+    --cor-quinta: #d5d4d4;
+    --cor-sexta: #f0f0f0;
+}
+button {
+    margin: 5px;
+}
+p {
+    margin: auto;
+    font-size: 1.1em;
+    color: var(--cor-secundaria);
+    
+}
+p:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}

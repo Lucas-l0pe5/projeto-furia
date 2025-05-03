@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Inscreva-se</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/globalstyle.css">
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
-    <div id="header-placeholder"></div>
-    <header>
-        <div class="lista-navegacao">
-            <div class="estilo-externo"><div class="now">Login/Inscreva-se</div></div>
-        </div>
+    <header class="logo">
+        <div class="furia-logo"><img src="IMG/Furia_Esports_logo 1.png"></div>
     </header>
+    <section>
+            <div class="titulo">Fúria</div>
+            <div class="subtitulo">Fanatics</div>
+    </section>
     <section class="login-section">
         <div class="login-container">
-            <h1>Login</h1>
+            <h1>Criar uma conta</h1>
             <form action="Página Inicial.html" method="post">
                 <input type="name" placeholder="Usuário" required><br>
                 <input type="password" placeholder="Senha" required><br>
-                <button type="submit">Entrar</button>
+                <button type="submit" onclick="cadastrar()"><a class="criar-button" href="Pagina-Inicial.html">Criar</a></button>
             </form>
             <p>Não tem uma conta? <a href="#">Inscreva-se</a></p>
         </div>
     </section>
 </body>
-<script>
-    fetch("Header Logo.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("header-placeholder").innerHTML = data;
-      });
-</script>
+<script></script>
 </html>

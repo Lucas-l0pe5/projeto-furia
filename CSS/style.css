@@ -157,18 +157,21 @@ section {
     padding-top: 10px;
     
 }
-.botao-curtir, .botao-comentar, .botao-compartilhar {
+.icon-curtir, .icon-comentar, .icon-compartilhar {
     color: var(--cor-primaria-quinta);
     font-size: 1.2em;
     cursor: pointer;
-    transition: color 0.3s;
+    :hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
 }
-.botao-curtir:hover {
-    color: red;
+.icon-curtir:hover {
+    fill: red;
 }
-.botao-comentar:hover {
-    color: greenyellow;
+.icon-comentar:hover {
+    fill: greenyellow;
 }
-.botao-compartilhar:hover {
-    color: blue;
+.icon-compartilhar:hover {
+    fill: blue;
 }

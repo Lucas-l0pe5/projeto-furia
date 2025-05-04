@@ -63,7 +63,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: s;
+    background-color: var(--cor-primaria);
     height: 200px;
     width: 400px;
     background-color: var(--cor-secundaria);
